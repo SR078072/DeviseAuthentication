@@ -1,0 +1,18 @@
+<div class="container text-center">
+<p class="displayAtt">
+  <%= @article.title %>
+</p>
+ 
+<p style="font-size: 20px;">
+  <%= @article.text %>
+</p>
+
+<h3 class="display-6" style="font-family: Blippo, fantasy;">Comments</h3>
+<%= render @article.comments%>
+
+<h3 class="display-5" style="font-family: Blippo, fantasy;">Add a comment here:</h3>
+<%= render 'comments/form'%>
+
+<%= link_to 'Edit', edit_article_path(@article), class: "btn btn-warning" %>
+<%= link_to 'Back', articles_path, class: "btn btn-secondary" %>
+</div>

@@ -1,0 +1,78 @@
+
+---
+ar_internal_metadata:
+  columns:
+  - key
+  - value
+  - created_at
+  - updated_at
+  records: 
+  - - environment
+    - development
+    - 2020-02-05 09:01:35.214163000 Z
+    - 2020-02-05 09:01:35.214163000 Z
+
+---
+articles:
+  columns:
+  - id
+  - title
+  - text
+  - created_at
+  - updated_at
+  records: 
+  - - 17
+    - 'Article 8665: Is this a reality?'
+    - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pharetra, ligula
+      eu cursus finibus, orci quam congue nunc, vitae porta lectus tellus nec nibh.
+      Sed porttitor ligula eget eros auctor, ut tempor lectus vestibulum. Fusce ultricies
+      massa arcu, non laoreet odio fringilla non. Cras ultricies porttitor ligula
+      quis viverra. Maecenas quam purus, luctus at vehicula in, pulvinar eu magna.
+      Duis bibendum urna vel mi vestibulum, vel eleifend leo maximus. Nunc pretium
+      sem luctus est dictum, sed porta eros lacinia. Maecenas ut velit pellentesque,
+      posuere augue id, placerat sapien. Praesent dictum elit ac tristique vehicula.
+      Donec ut lectus a ante elementum venenatis non id mauris. Ut laoreet, turpis
+      ac varius luctus, orci dolor auctor massa, non tincidunt magna tellus sit amet
+      est. Vestibulum id sapien convallis tortor tempor aliquam.
+    - 2020-02-06 09:41:34.485026000 Z
+    - 2020-02-07 09:23:57.900391000 Z
+  - - 21
+    - Article 5696
+    - The experimentation was really an experiment.
+    - 2020-02-07 08:05:13.147456000 Z
+    - 2020-02-07 08:05:13.147456000 Z
+
+---
+comments:
+  columns:
+  - id
+  - commenter
+  - body
+  - article_id
+  - created_at
+  - updated_at
+  records: 
+  - - 17
+    - Shashankit
+    - Nice work there
+    - 21
+    - 2020-02-07 08:06:25.853999000 Z
+    - 2020-02-07 08:06:25.853999000 Z
+  - - 18
+    - James
+    - This needs an update!
+    - 17
+    - 2020-02-07 08:11:00.922961000 Z
+    - 2020-02-07 08:11:00.922961000 Z
+  - - 19
+    - Sarah
+    - This is not working anymore :(
+    - 17
+    - 2020-02-07 08:12:02.994217000 Z
+    - 2020-02-07 08:12:02.994217000 Z
+  - - 21
+    - Raj
+    - This is really an inspiring thought! Kudos to the team!
+    - 17
+    - 2020-02-07 08:12:52.248674000 Z
+    - 2020-02-07 08:12:52.248674000 Z

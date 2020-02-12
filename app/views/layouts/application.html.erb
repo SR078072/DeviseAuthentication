@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <title>HU</title>
+	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/home/shashankitraj/HU/app/assets/stylesheets/mycustom.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    
+  
+  </head>
+
+  <body style="background-image: url('https://wallpaperplay.com/walls/full/b/3/7/329976.jpg'); background-repeat: no-repeat;">
+  <nav class="navbar navbar-light d-flex bd-highlight mb-3">
+    <a class="navbar-brand mr-auto p-2 bd-highlight">Blog.io</a>
+    <% if !user_signed_in? %>
+      <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-outline-primary p-2 bd-highlight" %>
+      <%= link_to "Sign In", new_user_session_path, class: "btn btn-outline-success p-2 bd-highlight" %>
+    <% end%>
+    <% if user_signed_in? %>
+      <%= link_to "Log Out", destroy_user_session_path, method: :delete, class: "btn btn-outline-danger p-2 bd-highlight" %>
+    <% end%>
+  </nav>
+      
+
+      <div class="container col-9" style="background-color: #c4dbff; margin-top: 50px; opacity: 0.8;">
+        <p class="alert text-center" style="opacity:.7"><%= notice%></p>
+        <p class="alert text-center" style="opacity:.7"><%= alert%></p>
+        
+         <%= yield %>
+      </div>
+
+
+  </body>
+</html>
