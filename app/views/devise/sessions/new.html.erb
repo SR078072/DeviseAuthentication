@@ -1,13 +1,13 @@
-<div class="container text-center">
+<div class="container text-left">
 <h1 class="display-3">Log In</h1>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">
-    <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control", placeholder: "Enter your Email" %>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control vw-40", placeholder: "Enter your Email" %>
   </div>
 <br>
   <div class="field">
-    <%= f.password_field :password, autocomplete: "current-password", class: "form-control", placeholder: "Enter your Password" %>
+    <%= f.password_field :password, autocomplete: "current-password", class: "form-control vw-40", placeholder: "Enter your Password" %>
   </div>
 <!--
   <% if devise_mapping.rememberable? %>
@@ -17,11 +17,14 @@
     </div>
   <% end %>
 -->
-</div>
 <br>
-<div class="d-flex justify-content-center">
+<div class="flex-column">
+  <div>
     <%= f.submit "Log in", class: "btn btn-success" %>
 <% end %>
+  </div>
+<br>
 
 <%= render "devise/shared/links" %>
+</div>
 </div>
